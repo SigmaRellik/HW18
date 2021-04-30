@@ -65,7 +65,7 @@ Not only were web servers taken offline by a DDOS attack, but upload and downloa
     - `ratio`
   
    Hint: Use the following format when for the `table` command: `| table fieldA  fieldB fieldC`
-    
+   - 
     > Answer: `source="server_speedtest.csv" | eval ratio = 'UPLOAD_MEGABITS' / 'DOWNLOAD_MEGABITS'     | table _time IP_ADDRESS DOWNLOAD_MEGABITS UPLOAD_MEGABITS ratio`
 
 4. Answer the following questions:
@@ -95,8 +95,10 @@ Submit a screen shot of your report and the answer to the questions above.
 2. Create a report that shows the `count` of critical vulnerabilities from the customer database server.
    - The database server IP is `10.11.36.23`.
    - The field that identifies the level of vulnerabilities is `severity`.
+   - 
       > Answer: `source="nessus_logs.csv" dest_ip="10.11.36.23" severity=critical | stats count as total`
       > Answer: `Total count of critical vulnerabilities is 49`
+   -
 3. Build an alert that monitors every day to see if this server has any critical vulnerabilities. If a vulnerability exists, have an alert emailed to `soc@vandalay.com`.
 
 Submit a screenshot of your report and a screenshot of proof that the alert has been created.
