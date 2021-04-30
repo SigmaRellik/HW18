@@ -80,6 +80,7 @@ Not only were web servers taken offline by a DDOS attack, but upload and downloa
 Submit a screen shot of your report and the answer to the questions above.
 ![step1_part1](Images/step_1.png)
  
+![step1_part2](Images/step_1.1.png) 
 ### Step 2: Are We Vulnerable? 
 
 **Background:**  Due to the frequency of attacks, your manager needs to be sure that sensitive customer data on their servers is not vulnerable. Since Vandalay uses Nessus vulnerability scanners, you have pulled the last 24 hours of scans to see if there are any critical vulnerabilities.
@@ -97,9 +98,9 @@ Submit a screen shot of your report and the answer to the questions above.
       > Answer: `source="nessus_logs.csv" dest_ip="10.11.36.23" severity=critical | stats count as total`
       > Answer: `Total count of critical vulnerabilities is 49`
 3. Build an alert that monitors every day to see if this server has any critical vulnerabilities. If a vulnerability exists, have an alert emailed to `soc@vandalay.com`.
-
+![step2_part2](Images/step_2.1.png)
 Submit a screenshot of your report and a screenshot of proof that the alert has been created.
-
+![step2_part1](Images/step_2.png)
 
 ### Step 3: Drawing the (base)line
 
@@ -123,11 +124,11 @@ Submit a screenshot of your report and a screenshot of proof that the alert has 
     > Answer: `Looking at the timeline on average there is about 14 failed logins, based on that a threshold should be 20`
 
 4. Design an alert to check the threshold every hour and email the SOC team at SOC@vandalay.com if triggered. 
-    
+     ![step3_part3](Images/step_3.2.png)
 
 Submit the answers to the questions about the brute force timing, baseline and threshold. Additionally, provide a screenshot as proof that the alert has been created.
- 
- 
+ ![step3_part1](Images/step_3.png)
+ ![step3_part2](Images/step_3.1.png)
 ### Your Submission
   
 In a word document, provide the following:
