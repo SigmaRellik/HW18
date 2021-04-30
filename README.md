@@ -79,6 +79,7 @@ Not only were web servers taken offline by a DDOS attack, but upload and downloa
       > Answer: `9 hours, at 11:30 PM on February 23, 2020 system returned to normal`
 
 Submit a screen shot of your report and the answer to the questions above.
+![step1_part1](Images/step_1.png)
  
 ### Step 2: Are We Vulnerable? 
 
